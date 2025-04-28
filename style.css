@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+  background: #634E41;
+  background: linear-gradient(0deg,rgba(99, 78, 65, 1) 0%, rgba(183, 198, 47, 1) 100%);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 16px ;
+  line-height: 1.5;
+}
+
+h1,h2,h3 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 600;
+  color: #0C8346;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  margin-top: 28px;
+  display: inline-block;
+  text-decoration: none;
+  color: #B7C62F;
+  font-weight: 500;
+  background-color: #634E41;
+  padding: 16px;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: #B7C62F;
+  color: #634E41;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  background-color: #FAFAFF;
+  margin: 24px 0;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+
+.img-circle {
+  top: -10px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #634E41;
+  margin-top: -15px;
+  z-index: 0;
+}
+
+
+.header-line-height {
+  line-height: 10px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.banner {
+  object-fit: cover;
+  object-position: center;
+  background-image: url("./images/shrek-banner.jpg");
+
+  width: 810px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.profile-details {
+  padding: 0 50px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.padding-zero {
+  margin: 0;
+  padding: 15px 0 0 0
+}
+
+.profile-inline h3, .profile-inline h1, .profile-inline p {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.profile-inline p {
+  line-height: 1.5;
+}
+
+.blank {
+  width: 210px;
+}
+
+.button-center {
+  height: 100%;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.fa-brands {
+  font-size: 40px;
+}
+
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+
+  .banner {
+    object-fit: cover;
+    object-position: center;
+    background-image: url("./images/shrek-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 670px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+  }
+
+  .blank {
+    width: 110px;
+  }
+
+  .fa-brands {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .banner {
+    object-fit: cover;
+    object-position: center;
+    background-image: url("./images/shrek-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+  }
+
+  .blank {
+    width: 0px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  a {
+    margin-top: 32px;
+    display: inline-block;
+    text-decoration: none;
+    color: #B7C62F;
+    font-weight: 500;
+    background-color: #634E41;
+    padding: 16px 8px;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .profile-details{
+    height: 250px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .profile-details {
+    display: block;
+  }
+
+
+  .blank {
+    width: 0px;
+  }
+
+  a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #B7C62F;
+    font-weight: 500;
+    background-color: #634E41;
+    padding: 16px 8px;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  .margin-bottom-10 {
+    margin-bottom: 0px;
+  }
+
+  .fa-brands {
+    font-size: 20px;
+  }
+}
